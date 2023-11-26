@@ -48,13 +48,13 @@ social:
     # - https://www.facebook.com/username
     
 
-google_site_verification: # fill in to your verification string
+google_site_verification: 'WdFI6LgHyHilqq9ZXnTs0YseXEMV0Kkw3L9G_FyJ6-c' # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-google_analytics: G-QFD8X4DJVJ
-  id: G-QFD8X4DJVJ # fill in your Google Analytics ID
+google_analytics: 
+  id: # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -108,10 +108,10 @@ assets:
     enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-    env: # [development|production]
+    env: production # [development|production]
 
 pwa:
-  enabled: false # the option for PWA feature
+  enabled: true # the option for PWA feature
 
 paginate: 10
 
