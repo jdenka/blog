@@ -16,10 +16,10 @@ timezone: Europe/Stockholm
 
 title: CloudIdentity # the main title
 
-tagline: A blog where the focus is about IAM topics and PowerShell # it will display as the sub-title
+tagline: A blog where the focus is about IAM, PowerShell, Entra ID and Automation # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A small blog where I'll write about IAM, PowerShell and things covering those topics.
+  A small blog where I'll write about IAM, PowerShell, Automation, Entra ID and other topics covering the security aspect in the cloud. Cybersecurity, Cloudidentity, Identity and Access Management. 
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
