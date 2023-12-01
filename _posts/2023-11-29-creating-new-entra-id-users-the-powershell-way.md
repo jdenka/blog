@@ -91,10 +91,13 @@ function New-EntraUser {
     }
     # If $Domain is null or empty it will check the environments default domain and use it.
     if ([string]::IsNullOrEmpty($Domain)) {
-        $pd = Get-MgDomain | Where-Object { $_.IsDefault -eq 'True' } | Select-Object id
-        $domain = $pd.Id
+        $pd = Get-MgDomain | Where-Object { $_.IsDefault -eq 'True' }
+        $userdomain = $pd.Id
     }
-
+    else {
+        $userdomain = $Domain
+    }
+    
     $MailName = Remove-DiacriticChars -srcString "$($GivenName).$($SurName)"
 
     $Password = New-Password -Length 16
@@ -110,12 +113,12 @@ function New-EntraUser {
         PasswordProfile   = $PasswordProfile
         AccountEnabled    = $true
         MailNickname      = $MailName
-        UserPrincipalName = "$($MailName)@$($Domain)"
+        UserPrincipalName = "$($MailName)@$($userdomain)"
     }
+    # Creating the new user
     $counter = 0
     $checkupn = get-mguser -search "userprincipalname:$($userparams.UserPrincipalName)" -ConsistencyLevel eventual
-    if ($null -eq $checkupn) {
-        # Create a new user
+    if ([string]::IsNullOrEmpty($checkupn)) {
         try {
             New-MgUser @userParams -ErrorAction Stop
             Write-Output "--------- `nCreated user with username: `n$($userParams.UserPrincipalName) `nWith password: `n$Password `n---------"
@@ -136,7 +139,7 @@ function New-EntraUser {
                     PasswordProfile   = $PasswordProfile
                     AccountEnabled    = $true
                     MailNickname      = $countername
-                    UserPrincipalName = "$($countername)@$($Domain)"
+                    UserPrincipalName = "$($countername)@$($userdomain)"
                 }
                 $checkupn = get-mguser -search "userprincipalname:$($userparams.UserPrincipalName)" -ConsistencyLevel eventual
             }
