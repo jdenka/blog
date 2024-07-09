@@ -6,7 +6,7 @@ order: 4
 
 ## Welcome to my blog
 
-I'm Dennis and im 38 years old living in Sweden, I currently work as a IT Consultant focusing on Identity and Access management at [Maxitech AB](https://www.maxitech.nu). 
+I'm Dennis and im 39 years old living in Sweden, I currently work as a IT Consultant with Identity and Access management building stuff out of PowerShell as a self employed / freelancer. 
 
 So the topics being covered in this blog will start with Identity topics in Entra ID and will probably cover PowerShell since I like to automate stuff with it.
 
