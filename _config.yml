@@ -16,17 +16,13 @@ timezone: Europe/Stockholm
 
 title: CloudIdentity # the main title
 
-<<<<<<< HEAD
 tagline: A blog where the focus is about IAM, PowerShell, Entra ID and Automation # it will display as the sub-title
-=======
-tagline: A text-focused Jekyll theme # it will display as the subtitle
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
 
 description: >- # used by seo meta and the atom feed
-  A small blog where I'll write about IAM, PowerShell, Automation, Entra ID and other topics covering the security aspect in the cloud. Cybersecurity, Cloudidentity, Identity and Access Management. 
+  A small blog where I'll write about IAM, PowerShell, Automation, Entra ID and other topics covering the security aspect in the cloud. Cybersecurity, Cloudidentity, Identity and Access Management.
 
 # Fill in the protocol & hostname for your site.
-<<<<<<< HEAD
+
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://www.cloudidentity.se"
 
@@ -38,16 +34,6 @@ twitter:
 
 LinkedIn:
   username: denkaj
-=======
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
-
-github:
-  username: github_username # change to your GitHub username
-
-twitter:
-  username: twitter_username # change to your Twitter username
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
 
 social:
   # Change to your full name.
@@ -56,42 +42,29 @@ social:
   email: blog@cloudidentity.se # change to your email address
   links:
     # The first element serves as the copyright owner's link
-<<<<<<< HEAD
+
     - https://twitter.com/CloudDenka # change to your twitter homepage
     - https://github.com/jdenka # change to your github homepage
     - https://www.linkedin.com/in/denkaj/ # LinkedIn page
-=======
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    
 
-<<<<<<< HEAD
-google_site_verification: 'WdFI6LgHyHilqq9ZXnTs0YseXEMV0Kkw3L9G_FyJ6-c' # fill in to your verification string
-=======
 # Site Verification Settings
 webmaster_verifications:
-  google: # fill in your Google verification code
+  google: "WdFI6LgHyHilqq9ZXnTs0YseXEMV0Kkw3L9G_FyJ6-c" # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
   facebook: # fill in your Facebook verification code
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-<<<<<<< HEAD
-google_analytics: 
-  id: # fill in your Google Analytics ID
-=======
 # Web Analytics Settings
 analytics:
   google:
-    id: # fill in your Google Analytics ID
+    id: G-QFD8X4DJVJ # fill in your Google Analytics ID
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
@@ -106,7 +79,6 @@ analytics:
 # Page views settings
 pageviews:
   provider: # now only supports 'goatcounter'
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
 
 # Prefer color scheme setting.
 #
@@ -166,12 +138,7 @@ assets:
     enabled: # boolean, keep empty means false
     # specify the Jekyll environment, empty means both
     # only works if `assets.self_host.enabled` is 'true'
-<<<<<<< HEAD
     env: production # [development|production]
-=======
-    env: # [development | production]
->>>>>>> 3efd6b6c0e0d9f1a86202b95fc5884b6927ef453
-
 pwa:
   enabled: true # The option for PWA feature (installable)
   cache:
